@@ -1,0 +1,24 @@
+<table class="table table-striped table-bordered table-ligth">
+  <thead class="table-success">
+    <tr>
+      <th>#ID</th>
+      <th>#tarefa</th>
+      <th>#visivel</th>
+      <th>#created_at</th>
+      <th>#ACtion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of photos">
+      <td>{{ i.id }}</td>
+      <td>{{ i.tarefa }}</td>
+      <td>{{ i.visivel }}</td>
+      <td>{{ i.created_at}}</td>
+
+      <td> <a [routerLink]="'/detalhes/'+i.id" class="btn btn-info">Show</a> </td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+<a href="/about" class="btn btn-primary">Criar Tarefas</a>
