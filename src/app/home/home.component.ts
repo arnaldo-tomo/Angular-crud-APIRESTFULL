@@ -1,4 +1,5 @@
 import { UserService } from './../service/user.service';
+import { DetalhesComponent } from './../detalhes/detalhes.component';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -15,6 +16,7 @@ export class HomeComponent  {
 
   Api = 'http://127.0.0.1:8000/api/getTask';
   nado: any;
+   id: any;
 
   constructor(
     private Http: HttpClient,private UserService:UserService,private route:ActivatedRoute )
@@ -22,7 +24,7 @@ export class HomeComponent  {
      this.AllUser();
   }
     AllUser(){
-      this.Http.get(this.Api).subscribe((data: any) => {
+      // this.Http.get(this.Api).subscribe((data: any) => {
           // console.log('Minhas Tarefas',data);
           this.photos = data;
       })
