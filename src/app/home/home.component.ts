@@ -24,7 +24,7 @@ export class HomeComponent  {
      this.AllUser();
   }
     AllUser(){
-      // this.Http.get(this.Api).subscribe((data: any) => {
+      this.Http.get(this.Api).subscribe((data: any) => {
           // console.log('Minhas Tarefas',data);
           this.photos = data;
       })
