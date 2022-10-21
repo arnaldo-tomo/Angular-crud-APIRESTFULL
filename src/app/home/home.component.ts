@@ -13,7 +13,6 @@ export class HomeComponent  {
 
   photos: Array<any> = new Array();
 
-
   Api = 'http://127.0.0.1:8000/api/getTask';
   nado: any;
    id: any;
