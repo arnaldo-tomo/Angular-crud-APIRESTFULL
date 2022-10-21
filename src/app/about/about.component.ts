@@ -19,9 +19,9 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.formValores = this.FormBuilder.group({
       tarefa: ['']
-      // nome: [''],
-      // duracao: ['']
-      // tarefa: ['']
+      nome: [''],
+      duracao: ['']
+      tarefa: ['']
     })
   }
 
